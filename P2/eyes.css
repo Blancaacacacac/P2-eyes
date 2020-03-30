@@ -1,0 +1,184 @@
+body{
+height:100vh;
+width:100vw;
+display:flex;
+justify-content:center;
+align-items: center;
+background: #ffffff;
+}
+
+.eye{
+  width:500px;
+  height:500px;
+  background:#fffdf9;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  margin:0 1rem;
+  clip-path: circle(50% at center);
+  position:relative;
+  overflow:hidden;
+}
+
+.eyeball{
+  width:40%;
+  height:40%;
+  top:200px;
+  position:absolute;
+  background:#343434;
+  border-radius:50%;
+  animation: movement 6% ease-in-out infinite;
+
+}
+.upper-pupil{
+  top:0;
+  width:100%;
+  height:250px;
+  background:#f6c6c6;
+  position:absolute;
+  animation: blink 6s ease-in-out infinite;
+  z-index:1;
+}
+
+.upper-pupil span{
+  display:block;
+  width:100%;
+  height:15%;
+  background:#ff6b6b;
+  border-radius:0 0 60% 60%;
+  transition:0.4s all;
+}
+.eye: hover > .upper-pupil span{
+  height:100%;
+}
+
+@keyframes movement{
+  0%, 10%{
+    transform:translateX(0);
+  }
+    20%{
+      transform:translateX(-80%);
+    }
+    30%,80%{
+      transform:translateX(0);
+    }
+   90%{
+     transform:translateX(-80%);
+   }
+  100%{
+    transform:translateX(0);
+  }
+}
+
+@keyframes blink{
+  0%,30%{
+    height:50%;
+  }
+  32%{
+    height:100%;
+  }
+  34%{
+    height:50%;
+  }
+  36%{
+    height:100%;
+  }
+  38%,50%{
+    height:100%;
+  }
+  60%,70%{
+    height:100%;
+  }
+  80%,100%{
+    height:50%;
+  }
+}
+
+
+
+
+.eye2{
+  width:500px;
+  height:500px;
+  background:#fffdf9;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  margin:0 1rem;
+  clip-path: circle(50% at center);
+  position:relative;
+  overflow:hidden;
+}
+.eyeball2{
+  width:40%;
+  height:40%;
+  top:200px;
+  position:absolute;
+  background:#343434;
+  border-radius:50%;
+  animation: movement 6% ease-in-out infinite;
+
+}
+.upper-pupil2{
+  top:0;
+  width:100%;
+  height:250px;
+  background:#f6c6c6;
+  position:absolute;
+  animation: blink 6s ease-in-out infinite;
+  z-index:1;
+}
+
+.upper-pupil2 span{
+  display:block;
+  width:100%;
+  height:15%;
+  background:#ff6b6b;
+  border-radius:0 0 60% 60%;
+  transition:0.4s all;
+}
+.eye2: hover > .upper-pupil2 span{
+  height:100%;
+}
+
+@keyframes movement{
+  0%, 10%{
+    transform:translateX(0);
+  }
+    20%{
+      transform:translateX(-80%);
+    }
+    30%,80%{
+      transform:translateX(0);
+    }
+   90%{
+     transform:translateX(-80%);
+   }
+  100%{
+    transform:translateX(0);
+  }
+}
+
+@keyframes blink{
+  0%,30%{
+    height:50%;
+  }
+  32%{
+    height:100%;
+  }
+  34%{
+    height:50%;
+  }
+  36%{
+    height:100%;
+  }
+  38%,50%{
+    height:100%;
+  }
+  60%,70%{
+    height:100%;
+  }
+  80%,100%{
+    height:50%;
+  }
+}
